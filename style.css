@@ -1,0 +1,393 @@
+/* Variables */
+:root {
+  --Primario: #6f32be;
+  --PrimarioOscuro: #50248a;
+  --Secundario: #fff;
+}
+
+/* Globales */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+h1 { font-size: 3.5rem;}
+h2 { font-size: 2.7rem;}
+h3 { font-size: 2rem;}
+ul { list-style: none;}
+li { font-size: 1.25rem;}
+
+h1, h2, h3 { 
+  text-align: center;
+  max-width: auto;
+}
+
+p { 
+  font-size: 1.25rem;
+  margin: 0 auto;
+}
+
+a { 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+button{
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  color: var(--Secundario);
+  background-color: var(--Primario);
+}
+
+button:hover {
+  background-color: #50248a;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.color-especial {
+  font-weight: bold;
+  color: var(--Primario);
+}
+/* Header */
+header {
+  background-color: rgb(245, 245, 245);
+  max-width: auto;
+}
+
+.logo {
+  font-size: 2.5rem;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+nav a {
+  text-align: center;
+}
+
+header a {
+  color: #000;
+  padding: 5px 10px;
+}
+
+header a:hover {
+  color: #50248a;
+}
+
+/* Hero */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(media//hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 90vh;
+  max-width: auto;
+}
+
+.hero__h1 {
+  color: var(--Secundario);
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.hero__span {
+  font-weight: normal;
+  font-size: 1.7rem;
+}
+
+/* About Me */
+.about-me__container {
+  padding: 0px 12px;
+  margin-bottom: 100px;
+}
+
+.about-me__h2 {
+  padding-top: 70px;
+  margin-top: 0;
+}
+
+.about-me__p {
+  text-align: center;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* Skills */
+.skills {
+  padding: 0px 12px 100px 12px;
+  background-color: rgb(30, 30, 30);
+  color: var(--Secundario);
+}
+
+.skills__h2 {
+  margin-top: 0;
+  padding-top: 70px;
+}
+
+.lenguaje__h3 {
+  padding: 0px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: rgb(10,10,10);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+  transition: all 300ms; 
+}
+
+.iconos:hover {
+  transform: scale(1.15);
+}
+
+.lenguaje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  transition: all 300ms;
+}
+
+.lenguaje:hover {
+  color: var(--Primario);
+}
+
+/* Projects */
+.projects__h2 {
+  padding-top: 70px;
+}
+
+#projects {
+  padding-bottom: 100px;
+}
+
+#projects .container {
+  text-align: center;
+}
+
+.project1, .project2, .project3 {
+  color: var(--Secundario);
+  padding: 50px 0px;
+  background-position: center center;
+  background-size: cover;
+  margin: 0px 12px 40px 12px;
+  transition: all 300ms;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.project1 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,.5),rgba(0,0,0,.5)), url(media/firstp.JPG);
+}
+
+.project1:hover {
+  transform: scale(1.15);
+}
+
+.project2 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,.5),rgba(0,0,0,.5)), url(media/secondp.JPG);
+}
+
+.project2:hover {
+  transform: scale(1.15);
+}
+
+.project3 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,.5),rgba(0,0,0,.5)), url(media/thirdp.JPG);
+}
+
+.project3:hover {
+  transform: scale(1.15);
+}
+
+/* Footer */
+footer {
+  background-color: rgb(30, 30, 30);
+}
+
+footer .container {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grupo2 {
+  order: 2;
+  color: var(--Secundario);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.grupo2 p {
+  font-size: 1.2rem;
+}
+
+.grupo3 ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.grupo3 li {
+  padding-right: 10px;
+}
+
+@media (min-width: 720px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0px;
+  }
+
+  #hero {
+    height: 100vh;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .about-me__img {
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  }
+  
+  .about-me__p {
+    font-size: 2rem;
+  }
+
+  .lenguajes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .project1, .project2, .project3 {
+    border-radius: 0;
+  }
+
+  footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+  }
+
+  .grupo1 {
+    display: flex;
+  }
+
+  .grupo1 p {
+    margin: 25.6px 0;
+    padding: 0;
+  }
+
+  .grupo2 {
+    color: var(--Secundario);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    order: 0;
+  }
+
+  .grupo2 p {
+    text-align: center;
+  }
+
+  .grupo2 p {
+    font-size: 1.2rem;
+  }
+
+  .grupo3 ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+  }
+
+  .grupo3 li {
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grupo1 p {
+    margin-left: 50px;
+  }
+}
